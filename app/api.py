@@ -39,7 +39,8 @@ def new_run():
 @survey.get('/runs/<key>')
 def get_run(key):
     manifest,_,results=storage().read(key)
-    return jsonify(id=key,manifest=manifest,balance=results['balance'],allocation=results['allocation'])
+    return jsonify(id=key,manifest=manifest,balance=results['balance'],allocation=results['allocation'],
+                   scheduling=results['scheduling'])
 
 
 @survey.post('/runs/<key>/rerun')

@@ -21,4 +21,5 @@ def archive(service, tables, previous=None):
     manifest,_,_ = service.read(key)
     if manifest['result_sha256'] != digest:
         raise SurveyProblem('REPLAY_DIFFERENCE','同源归档摘要存在冲突',409)
-    return dict(id=key,manifest=manifest,reused=not fresh,balance=results['balance'])
+    return dict(id=key,manifest=manifest,reused=not fresh,balance=results['balance'],
+                scheduling=results['scheduling'])

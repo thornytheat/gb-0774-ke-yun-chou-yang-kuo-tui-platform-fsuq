@@ -3,4 +3,5 @@ REASONS = {
     'OLDER_VISIT':'已被重访取代', 'REPEAT_VISIT':'重复回收', 'VISIT_CONFLICT':'同版答案冲突',
     'UNKNOWN_TRIP':'班次无出票记录', 'UNKNOWN_CELL':'申报层不在班次沿革', 'ANSWER_MISSING':'有效问项缺值',
     'BAD_PROBABILITY':'抽中概率非法', 'BAD_RESPONSE':'回收状态无效', 'NONRESPONSE':'未有效回应',
+    'SCHED_FLIP':'缺班次答卷后首选翻转', 'SCHED_TIE':'首选并列', 'SCHED_NO_SAMPLE':'分层无有效样本',
 }
